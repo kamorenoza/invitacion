@@ -1,0 +1,35 @@
+#root {
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+body,
+html {
+  background-color: #fafafa;
+  overscroll-behavior: none;
+}
+
+@font-face {
+  font-family: 'Fuente1';
+  src: url('./assets/fonts/Parisienne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fuente2';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fuente3';
+  src: url('./assets/fonts/Rubik-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}

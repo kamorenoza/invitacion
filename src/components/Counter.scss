@@ -1,0 +1,46 @@
+.counter {
+  text-align: center;
+
+  &__title {
+    font-family: 'Fuente1';
+    font-size: 5rem;
+    color: $golden;
+
+    @media (max-width: 767px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    padding: 0 15px;
+    border-right: 1px solid $gray;
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+
+  &__number {
+    font-size: 3rem;
+    font-family: 'Fuente3';
+    font-weight: 100;
+    color: $golden2;
+    min-width: 60px;
+
+    @media (max-width: 767px) {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__text {
+    font-family: 'Fuente2';
+    color: $gray;
+    text-transform: uppercase;
+  }
+}

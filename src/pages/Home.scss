@@ -1,0 +1,182 @@
+.home {
+  .banner {
+    position: relative;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      min-height: 120dvh;
+      margin-top: -50px;
+    }
+
+    &::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-image: url('../assets/images/matri_banner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+      transform: translateY(var(--scroll-offset, 0px));
+      will-change: transform;
+      transition: transform 0.05s ease-out;
+      inset: 0;
+    }
+
+    &__opacity {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      color: white;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    &__date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-family: 'Fuente3';
+      font-size: 1.8rem;
+      margin: 0;
+
+      &::before,
+      &::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background-color: white;
+        opacity: 0.5;
+        z-index: 9999;
+      }
+    }
+
+    &__names {
+      font-family: 'Fuente1';
+      font-size: $Fuente1Size;
+      margin: 0;
+
+      @media (max-width: 767px) {
+        font-size: $Fuente1SizeSm;
+      }
+    }
+
+    &__and {
+      background-color: white;
+      display: block;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      font-size: 4rem;
+      color: $golden;
+      line-height: 80px;
+      position: relative;
+      top: -10px;
+      margin: auto;
+
+      @media (max-width: 767px) {
+        width: 60px;
+        height: 60px;
+        font-size: 3rem;
+        line-height: 60px;
+      }
+    }
+
+    &__divider {
+      height: 1px;
+      background-color: white;
+      opacity: 0.5;
+      z-index: 9999;
+    }
+
+    &__arrow {
+      background-image: url('../assets/images/flecha.gif');
+      width: 100%;
+      height: 50px;
+      z-index: 999;
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: 70px;
+      background-position: center;
+      opacity: 0.5;
+      margin-top: 30px;
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__message {
+      margin-top: 30px;
+      font-family: 'Fuente2';
+      font-size: 1.2rem;
+    }
+
+    &__comilla-abre {
+      background-image: url('../assets/images/comilla_abre.svg');
+      width: 100%;
+      height: 40px;
+      z-index: 999;
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: 40px;
+      background-position: center;
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+
+    &__comilla-cierra {
+      background-image: url('../assets/images/comilla_cierra.svg');
+      width: 100%;
+      height: 40px;
+      z-index: 999;
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: 40px;
+      background-position: center;
+      opacity: 0.5;
+      margin-top: 15px;
+    }
+  }
+
+  .contenido {
+    padding: 3rem 2rem;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 3;
+    min-height: 100dvh;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  &__divider {
+    background-image: url('../assets/images/divider.png');
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
