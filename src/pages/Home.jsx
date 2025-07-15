@@ -10,7 +10,6 @@ import Footer from '../components/Footer'
 import { useLoader } from '../context/LoaderContext'
 import PageLoader from '../components/PageLoader'
 import InitMessage from '../components/InitMessage'
-import cancion from '@/assets/audio/music.mp3'
 
 function Home() {
   const [showScrollIcon, setShowScrollIcon] = useState(true)
@@ -74,7 +73,13 @@ function Home() {
         <div className="sound"></div>
       </div>
 
-      <audio ref={audioRef} src={cancion} loop autoPlay hidden />
+      <audio
+        ref={audioRef}
+        src={`${import.meta.env.BASE_URL}assets/audio/music.mp3`}
+        loop
+        autoPlay
+        hidden
+      />
 
       {loading && <PageLoader />}
 
