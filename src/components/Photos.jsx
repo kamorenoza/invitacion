@@ -36,7 +36,7 @@ function Photos() {
     },
 
     animation: {
-      duration: 1000,
+      duration: 2000,
       easing: (t) => t
     },
 
