@@ -5,6 +5,18 @@ import './Photos.scss'
 import Lottie from 'lottie-react'
 import camera from '../assets/images/camera.json'
 import { useLoader } from '../context/LoaderContext'
+import foto1 from '@/assets/images/foto1.jpg'
+import foto2 from '@/assets/images/foto2.jpg'
+import foto3 from '@/assets/images/foto3.jpg'
+import foto5 from '@/assets/images/foto5.jpg'
+import foto6 from '@/assets/images/foto6.jpg'
+import foto7 from '@/assets/images/foto7.jpg'
+import foto8 from '@/assets/images/foto8.jpg'
+import foto9 from '@/assets/images/foto9.jpg'
+import foto10 from '@/assets/images/foto10.jpg'
+import foto11 from '@/assets/images/foto11.jpg'
+import foto12 from '@/assets/images/foto12.jpg'
+import foto13 from '@/assets/images/foto13.jpg'
 
 function Photos() {
   const timer = useRef()
@@ -12,18 +24,18 @@ function Photos() {
   const { showLoader, hideLoader } = useLoader()
 
   const images = [
-    '/src/assets/images/foto1.jpg',
-    '/src/assets/images/foto2.jpg',
-    '/src/assets/images/foto3.jpg',
-    '/src/assets/images/foto5.jpg',
-    '/src/assets/images/foto6.jpg',
-    '/src/assets/images/foto7.jpg',
-    '/src/assets/images/foto8.jpg',
-    '/src/assets/images/foto9.jpg',
-    '/src/assets/images/foto10.jpg',
-    '/src/assets/images/foto11.jpg',
-    '/src/assets/images/foto12.jpg',
-    '/src/assets/images/foto13.jpg'
+    foto1,
+    foto2,
+    foto3,
+    foto5,
+    foto6,
+    foto7,
+    foto8,
+    foto9,
+    foto10,
+    foto11,
+    foto12,
+    foto13
   ]
 
   const [sliderRef, instanceRef] = useKeenSlider({

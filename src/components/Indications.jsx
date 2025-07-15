@@ -1,4 +1,6 @@
 import './Indications.scss'
+import tips from '@/assets/images/tips.svg'
+import dresscode from '@/assets/images/dresscode.svg'
 
 function Indications() {
   return (
@@ -12,7 +14,7 @@ function Indications() {
         <div className="indications__card">
           <p className="indications__title">Notas</p>
           <div className="indications__icon">
-            <img src="/src/assets/images/tips.svg" alt="tips" />
+            <img src={tips} alt="tips" />
           </div>
           <p className="indications__text">
             La ceremonia civil será un momento íntimo con espacio limitado, por
@@ -27,7 +29,7 @@ function Indications() {
         <div className="indications__card">
           <p className="indications__title">Vestuario</p>
           <div className="indications__icon">
-            <img src="/src/assets/images/dresscode.svg" alt="dresscode" />
+            <img src={dresscode} alt="dresscode" />
           </div>
           <p className="indications__text">
             Nos encantará verte con algo que refleje tu esencia. Semiformal, con
@@ -40,7 +42,7 @@ function Indications() {
         <div className="indications__card">
           <p className="indications__title">Confirma tu asistencia</p>
           <div className="indications__icon">
-            <img src="/src/assets/images/tips.svg" alt="tips" />
+            <img src={tips} alt="tips" />
           </div>
           <p className="indications__text">
             Por favor, no olvides confirmar tu asistencia. Nos encantará saber

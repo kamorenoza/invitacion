@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 import { useLoader } from '../context/LoaderContext'
 import PageLoader from '../components/PageLoader'
 import InitMessage from '../components/InitMessage'
+import cancion from '@/assets/audio/music.mp3'
 
 function Home() {
   const [showScrollIcon, setShowScrollIcon] = useState(true)
@@ -73,13 +74,7 @@ function Home() {
         <div className="sound"></div>
       </div>
 
-      <audio
-        ref={audioRef}
-        src="/src/assets/audio/music.mp3"
-        loop
-        autoPlay
-        hidden
-      />
+      <audio ref={audioRef} src={cancion} loop autoPlay hidden />
 
       {loading && <PageLoader />}
 
@@ -100,8 +95,9 @@ function Home() {
             <div className="banner__message">
               <div className="banner__comilla-abre"></div>
               <p>
-                Todos somos mortales, hasta el primer beso y la segunda copa de
-                vino
+                El amor es lo único capaz de detener el tiempo, de volver eterno
+                un instante, y de hacer de una sola mirada, un pacto sin
+                palabras
               </p>
               <div className="banner__comilla-cierra"></div>
             </div>
