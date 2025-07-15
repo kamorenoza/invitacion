@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './Counter.scss'
 
 function Counter() {
-  const targetDate = '2025-08-25T00:00:00'
+  const targetDate = '2025-08-25T16:30:00'
   const [timeLeft, setTimeLeft] = useState({})
 
   useEffect(() => {
