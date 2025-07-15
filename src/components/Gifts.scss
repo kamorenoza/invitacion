@@ -1,0 +1,26 @@
+.gifts {
+  margin-top: 90px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  &__text {
+    margin: -20px auto 0;
+    padding: 0 30px;
+    max-width: 300px;
+
+    .btn-general {
+      width: auto;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 10px;
+    }
+  }
+}

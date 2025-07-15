@@ -30,6 +30,83 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FuenteBold';
+  src: url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuenteItalic';
+  src: url('./assets/fonts/Rubik-LightItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 p {
   margin: 0;
+}
+
+.btn-general {
+  background-color: #b97600;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4);
+  color: #ffffff !important;
+  margin-top: 30px;
+  font-family: 'Fuente3';
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 15px;
+}
+
+.btn-general:focus,
+.btn-general:focus-visible {
+  outline: none !important;
+}
+
+.btn-general:hover {
+  border-color: transparent !important;
+}
+
+.general-title {
+  font-family: 'Fuente1';
+  font-size: 4rem;
+  color: #b97600;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 4rem;
+}
+
+.general-subtitle {
+  font-family: 'Fuente2';
+  font-size: 1.3rem;
+  color: #b9b9b9;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.5rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .general-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .general-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
 }

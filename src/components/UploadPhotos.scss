@@ -1,0 +1,12 @@
+.uploadPhotos {
+  margin-top: 80px;
+
+  &__button {
+    width: 250px;
+    margin: -20px auto 0;
+
+    .btn-general {
+      width: auto;
+    }
+  }
+}
