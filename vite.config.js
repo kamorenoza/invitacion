@@ -4,7 +4,7 @@ import path from 'path'
 import ghPages from 'vite-plugin-gh-pages'
 
 export default defineConfig({
-  plugins: [react(), ghPages()],
+  plugins: [react()],
   base: '/invitacion/',
   css: {
     preprocessorOptions: {
